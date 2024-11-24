@@ -1,0 +1,30 @@
+@media screen and (max-width:986px) {
+    .roles-container{
+        display: block;
+    }
+    button{
+        margin: auto;
+        padding-top:2rem ;
+        padding-bottom:2rem ;
+        display: block;
+        align-items: center;
+    }
+    .content{
+        display: block;
+    }
+}
+@media screen and (max-width: 717px){
+
+    body{
+        background: rgb(183, 43, 226);
+    }
+    .navbar{
+        background:  rgb(183, 43, 226);
+    }
+    .foot1{
+        display: block;
+    }
+    .content img{
+        width: 80%;
+    }
+}

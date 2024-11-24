@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color:rgba(66, 236, 179, 0.804);
+    background: linear-gradient(91.1deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(231, 75, 184) 103.4%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+button i{
+  font-size:2rem;
+  color:rgba(66, 236, 179, 0.804);
+  cursor: pointer;
+}
+.back button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.back {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+form{
+    margin: 40px auto;
+    padding: 20px;
+
+}
+input{
+ 
+  font-weight: bold;
+  padding: 20px;
+  margin: 30px;
+  color: rgba(66, 236, 179, 0.804);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+input::placeholder{
+  color: rgba(66, 236, 179, 0.804);
+  font-size: 1.2rem;
+}
+input:focus{
+  outline-color: rgba(66, 236, 179, 0.804);
+}
+
+form button{
+  background-color:rgba(145, 234, 204, 0.804);
+  border-radius: 20px;
+  font-weight: bold;
+  color: rgb(76, 16, 76);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+form button:hover{
+  background-color:  rgb(76, 16, 76);
+  color: rgba(145, 234, 204, 0.804);
+}
+.back button i:hover{
+  color:  rgb(147, 228, 230);
+  background-color: rgba(0, 0, 0, 0);
+}

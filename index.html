@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRV RBCA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="https://vrvsecurityservices.com/">VRV Security</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="role-selection">
+        <h1>Welcome! Select Your Role...</h1>
+        <div class="roles-container">
+            <button onclick="redirectTo('login.html?role=admin')"><i class="fa-solid fa-user-tie"></i><hr>Admin</button>
+            <button onclick="redirectTo('login.html?role=editor')"><i class="fa-solid fa-user-pen"></i><hr>Editor</button>
+            <button onclick="redirectTo('login.html?role=viewer')"><i class="fa-solid fa-user-group"></i><hr>User</button>
+        </div>
+        <script>
+            function redirectTo(url) {
+            window.location.href = url;
+            }
+        </script>
+    </div>
+    <h1>Security and Services</h1>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum quaerat ad repellendus alias odio consectetur. Praesentium, rem! Minima amet doloremque animi harum tempora beatae? Hic molestiae esse adipisci earum accusantium aut, ducimus laudantium rem odio eius blanditiis facilis ex officia, voluptates, quod asperiores. Voluptate fugit totam praesentium ab dolor?
+        </p>
+        <img src="Images/sec1-removebg-preview.png" alt="">
+    </div>
+    <div class="content">
+        <img src="Images/digital-transformation-blog-01-1-removebg-preview.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum quaerat ad repellendus alias odio consectetur. Praesentium, rem! Minima amet doloremque animi harum tempora beatae? Hic molestiae esse adipisci earum accusantium aut, ducimus laudantium rem odio eius blanditiis facilis ex officia, voluptates, quod asperiores. Voluptate fugit totam praesentium ab dolor?
+        </p>
+    </div>
+
+    <footer class="foot1">
+		
+		<div class="f1 centre">
+			<h3><b>Get Started</b></h3>
+			<p><a href="">Start</a><br><a href="">Documentation</a><br><a href="">Installation</a></p>
+		</div>
+		<div class="f2 centre">
+			<div class="f2-1">
+				<h3><b>Company</b></h3>
+				<div class="flink">
+				<p><a href="">News</a><br><a href="">Careers</a><br></p>
+				</div>
+			</div>
+			<div class="f2-1">
+				<h3><b>Legal</b></h3>
+				<div class="flink">
+				<p><a href="">Privacy Notice</a><br><a href="">Terms of Use</a></p></div>
+			</div>
+		</div>
+		<div class="f3 centre">
+			<h3><b>Quick Links</b></h3>
+			<div class="flink">
+			<p><a href="">Support Centre</a><br><a href="">Service Status</a><br><a href="">Security</a><br><a href="">Customers</a><br><a href="">Reviews</a></p>
+			</div>
+		</div>
+	</footer>
+	<footer class="foot2 centre">
+	
+		<div>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-linkedin"></i>
+			<i class="fa-brands fa-discord"></i>
+		</div>
+	</footer>
+</body>
+</html>

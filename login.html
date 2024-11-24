@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="back">
+    <p>Home Page</p>
+    <button onclick="goBackToHome()"><i class="fa-solid fa-delete-left"></i></button>
+  </div>
+
+  <h1>Login</h1>
+  <p id="role-display"></p> 
+
+  <form>
+    <div class="form">
+      <input type="text" id="username" placeholder="Enter username" required>
+    </div>
+    <div class="form">
+      <input type="password" id="password" placeholder="Enter password" required>
+    </div>
+    <button type="button" onclick="validateLogin()">Login</button>
+  </form>
+
+  <p id="message" style="color: red;font-weight: bold;"></p> <!-- Error message -->
+
+  <script>
+    //Static Username And Password
+    const validCredentials = {
+      admin: { username: "admin", password: "admin123" },
+      editor: { username: "editor", password: "editor123" },
+      viewer: { username: "viewer", password: "viewer123" }
+    };
+
+   
+    const urlParams = new URLSearchParams(window.location.search);
+    const role = urlParams.get("role");
+
+    // Display the role on the page
+    const roleDisplay = document.getElementById("role-display");
+    if (role) {
+      roleDisplay.textContent = `You are logging in as: ${role.toUpperCase()}`;
+    } else {
+      roleDisplay.textContent = "No role selected.";
+    }
+
+
+    function validateLogin() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const message = document.getElementById("message");
+
+      // Clear previous message
+      message.textContent = "";
+
+      
+      if (validCredentials[role] &&
+          validCredentials[role].username === username &&
+          validCredentials[role].password === password) {
+        
+        window.location.href = `${role}.html`;
+      } else {
+        
+        message.textContent = "Wrong username or password for the selected role.";
+      }
+    }
+
+    // Function to go back to the home page
+    function goBackToHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
